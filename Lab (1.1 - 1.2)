@@ -1,0 +1,21 @@
+#1-2
+def function(width,loop):    
+    space = width//2    
+    star = 1    
+    
+    for diamond in range (loop):        
+        
+        while space>1:            
+            print((space * " ")+(star * "*"))            
+            space -=1            
+            star +=2  
+            
+        while space<=(width//2):            
+            print((space * " ")+(star * "*"))            
+            space +=1           
+            star -=2
+            
+N = int(input("width is: "))                
+M = int(input("diamond is: "))
+
+function(N,M)
